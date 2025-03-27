@@ -26,22 +26,7 @@ namespace UECap_Feature_Parser
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // getBandCombiantionList();
-
             getBandCombiantionList();
-
-        }
-        public int convertTextToInt(string text)
-        {
-            Debug.WriteLine(text);
-            switch (text) {
-                case "a": return 1;
-                    case "c": return 2;
-                    case "d": return 3;
-                    case "e": return 4;
-                 default: return 0;
-            }
-
         }
         public bool getSrsCs(int a)
         {
@@ -97,15 +82,11 @@ namespace UECap_Feature_Parser
                 //这里oneBandCombinationFeature已经收集完这个组合的每一个band信息，接下来就是汇总
                 AllTable.Add(oneBandCombinationFeature);
                 bandIndex++;
-                
-
-
             }
             String lastResult = "";
             var bandCaIndex = 0;
             foreach (var item in AllTable)
             {
-                
                 foreach(var item2 in item)
                 {
                     if (item2.bandNum == 0) break;
@@ -116,19 +97,7 @@ namespace UECap_Feature_Parser
                 bandCaIndex++;
             }
             textBox2.Text = lastResult.Replace(" ","");
-            var a = 0;
         }
-    }
-
-    /*
-    public class AllBandCombinationListFeature { 
-        List<>
-    }
-    */
-    public class OneBandCombinationListFeature
-    {
-          List<OneBandCombinationFeature> features = new List<OneBandCombinationFeature>();
-        
     }
     public class OneBandCombinationFeature
     {
