@@ -49,9 +49,9 @@
             label1.AutoSize = true;
             label1.Location = new System.Drawing.Point(17, 15);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(520, 20);
+            label1.Size = new System.Drawing.Size(619, 20);
             label1.TabIndex = 1;
-            label1.Text = "Paste your NSG UECap Singal Text here. Only Support SA, Not Support EN-DC";
+            label1.Text = "Paste your NSG UECap Singal Text here. Only Support SA, Not Support EN-DC, Support CRLF.";
             // 
             // button1
             // 
